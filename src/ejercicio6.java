@@ -17,12 +17,14 @@ public class ejercicio6 {
         b = X.nextInt();
 
         //si c esta dentro del intervalo
-        if (c >= a && c <= b){
-            System.out.println(c + " esta dentro del intervalo");
-        }
-        //si c no esta dentro del intervalo
-        else{
-            System.out.println(c + " no esta dentro del intervalo");
+        if (c >= a) {
+            if (c <= b) {
+                System.out.println(c + " está dentro del intervalo");
+            } else {
+                System.out.println(c + " no está dentro del intervalo");
+            }
+        } else {
+            System.out.println(c + " no está dentro del intervalo");
         }
 
     }
